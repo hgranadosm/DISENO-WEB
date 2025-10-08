@@ -1,0 +1,200 @@
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e7e7e7;
+}
+.reto-section {
+  padding: 48px 12px;
+  flex: 1 0 auto; 
+}
+.reto-title {
+  text-align: center;
+  color: #2b2d42;
+  margin-bottom: 28px;
+}
+.reto-card {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 10px;
+  padding: 36px 24px;
+  box-shadow: 0 6px 18px rgba(11,15,30,0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+  text-align: center;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.reto-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.reto-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.fa-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #5f5f5f;
+    transform: translateY(-1px);
+    font-size: 1.95rem;
+}
+
+.fa-stack .fa-circle {
+  color: #5158d5; 
+}
+.reto-card p {
+  margin: 8px 0 10px 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+.reto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(11,15,30,0.2);
+}
+
+.reto-cta {
+  margin-top: 20px;
+  background: #5158d5;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 100px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.reto-cta:focus,
+.reto-cta:active {
+  outline: 2px solid rgba(81,88,213,0.25);
+  outline-offset: 2px;
+}
+
+.cssbuttons-io-button {
+  background-image: linear-gradient(19deg, #ffffff 0%, #ffffff 100%);
+  color: rgb(119, 119, 119);
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 12px;
+  border-radius: 10em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  box-shadow: 0 0 1.6em rgba(143, 143, 143, 0.3),0 0 1.6em hsla(0, 0%, 49%, 0.3);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 10em;
+  right: 0.3em;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #464646;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.9);
+}
+
+.tarea-title-header{
+    color: #646464;
+    text-decoration: none;
+}
+
+.btn-back {
+  display: flex;
+  height: 3em;
+  min-width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e7e7;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #5f5f5f;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  padding: 0 0.6em;
+}
+
+.btn-back > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+.btn-back:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+.btn-back:hover {
+  
+  transform: translateY(-2px);
+}
+
+.linea-divisora {
+  width: 95%;          
+  margin: 1rem auto;   
+  border-top: 1px solid #818181; 
+}
+
+.site-footer {
+  background: #3b3b3b; 
+  color: #f3f4f6;
+  padding-left: 60px;
+}
+.site-footer .footer-label {
+  font-weight: 600;
+  opacity: 0.9;
+}
+.site-footer .footer-value {
+  margin-top: 6px;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
