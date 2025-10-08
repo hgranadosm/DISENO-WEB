@@ -1,0 +1,42 @@
+.minimal-feature {
+    padding: 2rem 1rem;
+}
+
+.minimal-icon {
+    font-size: 3rem;
+    color: #919191;
+    margin-bottom: 1.5rem;
+}
+
+.minimal-icon i {
+    transition: transform 0.3s ease;
+}
+
+.minimal-feature:hover .minimal-icon i {
+    transform: translateY(-5px);
+}
+
+.minimal-title {
+    font-size: 1.2rem;
+    color: #919191;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.minimal-text {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.display-4 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
