@@ -1,0 +1,162 @@
+
+.logo-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 200px;
+    background-color: #ffffff;
+}
+
+.logo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.logo-link {
+    display: block;
+    position: relative;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-image img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-card:hover .logo-image img {
+    transform: scale(0.9);
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+}
+
+.logo-card:hover .logo-overlay {
+    opacity: 1;
+}
+
+.logo-overlay h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease 0.1s;
+}
+
+.logo-overlay p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease 0.2s;
+    opacity: 0.9;
+}
+
+.logo-overlay i {
+    font-size: 1.5rem;
+    transform: translateY(20px);
+    transition: transform 0.3s ease 0.3s;
+}
+
+.logo-card:hover .logo-overlay h5,
+.logo-card:hover .logo-overlay p,
+.logo-card:hover .logo-overlay i {
+    transform: translateY(0);
+}
+
+.display-5 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .logo-card {
+        height: 180px;
+    }
+    
+    .logo-image {
+        padding: 15px;
+    }
+    
+    .logo-image img {
+        max-width: 75%;
+        max-height: 75%;
+    }
+    
+    .logo-overlay h5 {
+        font-size: 1.1rem;
+    }
+    
+    .logo-overlay p {
+        font-size: 0.8rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-card {
+        height: 160px;
+    }
+    
+    .logo-image {
+        padding: 10px;
+    }
+    
+    .logo-image img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+    
+    .logo-overlay {
+        padding: 15px;
+    }
+    
+    .logo-overlay h5 {
+        font-size: 1rem;
+    }
+    
+    .logo-overlay p {
+        font-size: 0.75rem;
+    }
+    
+    .logo-overlay i {
+        font-size: 1.3rem;
+    }
+}
