@@ -279,22 +279,28 @@ p {
     position: fixed;
     height: 60px;
     width: 60px;
-    background-color: #F9C80E;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     right: 30px;
     bottom: 30px;
     text-align: center;
-    line-height: 60px;
-    color: #0A0A0A;
+    line-height: 56px;
+    color: #F9C80E;
     font-size: 20px;
     border-radius: 50%;
     cursor: pointer;
-    transition: ease 0.3s;
+    transition: all 0.3s ease;
     z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
  }
 
  .botonScrollTop:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
+    background: rgba(249, 200, 14, 0.2);
+    border-color: #F9C80E;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    color: white;
  }
 
 
@@ -302,38 +308,73 @@ p {
 /*CHAT WHATAPP*/
 
 .container-botonws {
-    background-color: #e4e4e4;
-    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     position: fixed;
     z-index: 1000;
     border-radius: 50%;
-    bottom: 30px;
-    left: 30px;
-    padding: 25px;
-    transition: ease 0.3s;
+    bottom: 110px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
     animation: efecto 1.2s infinite;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .container-botonws:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
+    background: rgba(37, 211, 102, 0.2);
+    border-color: #25d366;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    animation: none;
+}
+
+.container-botonws a {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.container-botonws a:focus,
+.container-botonws a:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 
 /*efecto de animación imagen chat*/
 
+.container-botonws a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
 .botonws {
-    font-size: 40px;
+    font-size: 30px;
     color: #25d366;
     display: block;
     text-align: center;
     line-height: 1;
-    transition: ease 1s;
+    transition: all 0.3s ease;
     text-decoration: none;
+    position: relative;
+}
+
+.container-botonws:hover .botonws {
+    color: white;
+    transform: scale(1.1);
 }
 
 .backup-icon {
-    font-size: 35px;
+    font-size: 28px;
 }
 
 @keyframes efecto {
@@ -500,7 +541,9 @@ p {
 
 
 .foto-container:hover .foto-overlay {
-    background: rgba(162, 59, 114, 0.9);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
 }
 
 
@@ -528,7 +571,6 @@ p {
     left: 0;
     right: 0;
     height: 3px;
-    background: #011096;
 }
 
 .suscripcion-header {
@@ -593,11 +635,13 @@ p {
     background-color: white;
     box-shadow: 0 0 0 3px rgba(249, 200, 14, 0.1);
 }
-
+/*
 .btn-suscripcion {
     width: 100%;
     padding: 15px 25px;
-    background: #A23B72;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     color: white;
     border: none;
     border-radius: 25px;
@@ -610,10 +654,45 @@ p {
     justify-content: center;
     gap: 8px;
 }
+*/
+.btn-suscripcion {
+      width: 100%;
+    padding: 15px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
 
 .btn-suscripcion:hover {
-    background: #F9C80E;
-    color: #0A0A0A;
+     background: linear-gradient(135deg, #6f42c1 0%, #667eea 100%);
+    border-color: #6f42c1;
+    color: white;
+}
+
+.btn-suscripcion i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-suscripcion:hover i {
+    transform: scale(1.2);
+}
+
+.formulario-suscripcion .btn-suscripcion i {
+    color: #F9C80E;
 }
 
 
@@ -647,26 +726,6 @@ p {
     z-index: 2;
 }
 
-.titulo-contacto {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.icono-titulo {
-    margin-right: 10px;
-    color: #F9C80E;
-}
-
-.subtitulo-contacto {
-    font-size: 1.3rem;
-    color: #f8f9fa;
-    max-width: 600px;
-    margin: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
 
 .contacto-columna {
     height: 100%;
