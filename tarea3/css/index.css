@@ -159,7 +159,7 @@ body {
 /*********************  footer ******************************/
 
 .footer-moderno {
-    background: #0A0A0A;
+    background: #1a1919;
     color: white;
     position: relative;
     overflow: hidden;
@@ -176,7 +176,7 @@ body {
 }
 
 .footer-content {
-    padding: 60px 30px 40px 30px;
+    padding: 60px 100px 60px 100px;
     position: relative;
     z-index: 2;
 }
@@ -184,6 +184,26 @@ body {
 .footer-logo {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    .footer-right-content {
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 
 
@@ -195,14 +215,25 @@ body {
 }
 
 .footer-copyright {
-    padding: 10px;
+    padding: 0;
 }
 
 .copyright-text {
     font-size: 1rem;
-    margin-bottom: 8px;
+    margin-bottom: 0;
     color: #ecf0f1;
     font-weight: 500;
+}
+
+.footer-button {
+    width: 100%;
+    max-width: 250px;
+}
+
+@media (max-width: 991px) {
+    .footer-button {
+        max-width: 300px;
+    }
 }
 
 .project-text {
@@ -212,23 +243,39 @@ body {
     font-style: italic;
 }
 
-.btn-footer {
-    background: #1E2761;
+.btn-footer{
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
+    font-size: 1rem;
     font-weight: 600;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-footer:hover {
-    background: #A23B72;
+     background: linear-gradient(135deg, #6f42c1 0%, #667eea 100%);
+    border-color: #6f42c1;
     color: white;
+}
+
+.btn-footer i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-footer:hover i {
+    transform: scale(1.2);
 }
 
 .footer-bottom {
@@ -443,6 +490,17 @@ p {
     color: white;
 }
 
+.animate__delay-0_3s{
+    animation-delay: 0.3s;
+}
+
+.animate__delay-0_6s {
+  animation-delay: 0.6s;
+}
+
+.animate__delay-0_9s {
+  animation-delay: 0.9s;
+}
 
 
 /*SECCION FOTOGRAFICA*/
@@ -635,28 +693,9 @@ p {
     background-color: white;
     box-shadow: 0 0 0 3px rgba(249, 200, 14, 0.1);
 }
-/*
+
 .btn-suscripcion {
     width: 100%;
-    padding: 15px 25px;
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-*/
-.btn-suscripcion {
-      width: 100%;
     padding: 15px 20px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
@@ -729,18 +768,28 @@ p {
 
 .contacto-columna {
     height: 100%;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Nuevos estilos para la estructura simple */
 .contacto-info-simple {
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .contacto-item-simple {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    width: 100%;
 }
 
 .contacto-icono-simple {
@@ -753,7 +802,6 @@ p {
 .contacto-texto-simple h4 {
     margin: 0 0 5px 0;
     font-size: 1.1rem;
-    color: #F9C80E;
     font-weight: 600;
 }
 
@@ -829,6 +877,7 @@ p {
 .redes-sociales {
     text-align: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .titulo-redes {
@@ -837,6 +886,7 @@ p {
     color: #F9C80E;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .social-links {
@@ -858,7 +908,9 @@ p {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
-    min-width: 90px;
+    width: 100%;
+    min-height: 120px;
+    justify-content: center;
 }
 
 .social-link i {
@@ -1043,7 +1095,7 @@ p {
 /* FOOTER */
 @media (max-width: 768px) {
     .footer-content {
-        padding: 40px 0 25px 0;
+        padding: 40px 0 40px 0;
     }
     
     .footer-logo {
@@ -1114,7 +1166,7 @@ p {
 /* SECCIÓN FOTOGRÁFICA */
 @media (max-width: 768px) {
     .seccion-fotografica {
-        padding: 60px 0;
+        padding: 60px 15px;
     }
     
     .foto-container {
@@ -1244,7 +1296,7 @@ p {
     }
     
     .contacto-info-simple {
-        padding: 10px 0;
+        padding: 10px 20px;
     }
     
     .contacto-item-simple {
@@ -1341,3 +1393,4 @@ p {
         height: 350px;
     }
 }
+
