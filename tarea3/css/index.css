@@ -773,6 +773,7 @@ p {
     align-items: center;
 }
 
+/* Nuevos estilos para la estructura simple */
 .contacto-info-simple {
     padding: 20px 0;
     display: flex;
