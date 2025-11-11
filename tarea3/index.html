@@ -15,8 +15,52 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body  id="inicio">
+<body id="inicio">
 
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">
+                <img src="img/favicon.png" alt="Cirque du Soleil" class="navbar-logo">
+            </a>
+
+            <!-- responsive botón hamburguesa -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="uil uil-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inspiracion">Inspiración</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#magia">Magia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unete">Únete</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#conecta" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Conecta
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item custom-dropdown-item" href="https://n9.cl/22xtmw" target="_blank">
+                                <i class="fas fa-shopping-cart me-2"></i>Comprar Entradas
+                            </a></li>
+                            <li><hr class="dropdown-divider custom-divider"></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="https://www.cirquedusoleil.com/es/preguntas-frecuentes" target="_blank">
+                                <i class="fas fa-question-circle me-2"></i>Preguntas Frecuentes
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#encuentranos">Encuéntranos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <header class="banner-section espacio">
         <video class="video-background" autoplay muted loop>
@@ -41,9 +85,9 @@
                             </button>
                         </div>
                         <div class="col-lg-3 col-md-5 col-sm-8 mb-3">
-                            <a href="https://www.cirquedusoleil.com/las-vegas" target="_blank" class="btn-banner btn-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span class="btn-text">Comprar entradas</span>
+                            <a href="pdf/Programa del Espectáculo — Cirque du Soleil.pdf" target="_blank" class="btn-banner btn-link">
+                                <i class="fas fa-download"></i>
+                                <span class="btn-text">Descargar programa</span>
                             </a>
                         </div>
                     </div>
@@ -53,7 +97,7 @@
     </header>
 
     <!--Seccion 1: Sección Iconografica-->
-    <section class="espacio seccion-iconografica">
+    <section class="espacio seccion-iconografica" id="inspiracion">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5 mt-3">
@@ -96,7 +140,7 @@
     </section>
 
     <!--Seccion 2: Sección Fotográfica-->
-    <section class="seccion-fotografica espacio">
+    <section class="seccion-fotografica espacio" id="magia">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
@@ -188,7 +232,7 @@
     </section>
 
      <!--Seccion 3: Suscripción-->
-    <section class="espacio seccion-suscripcion" id="t1">
+    <section class="espacio seccion-suscripcion" id="unete">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
@@ -216,7 +260,7 @@
  
 
     <!--Seccion 3: Contacto -->
-    <section class="seccion-contacto espacio">
+    <section class="seccion-contacto espacio" id="conecta">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
@@ -265,29 +309,29 @@
                             <h4 class="titulo-redes">Síguenos en nuestras redes sociales:</h4>
                             <div class="row justify-content-center">
                                 <div class="col-lg-6 col-md-6 col-sm-10 mb-3">
-                                    <a href="https://www.tiktok.com/@cirquedusoleil" target="_blank" class="social-link tiktok">
-                                        <i class="fab fa-tiktok"></i>
+                                    <a href="https://www.tiktok.com/@cirquedusoleil" target="_blank" class="social-link tiktok " >
+                                        <i class="fab fa-tiktok wow animate__animated animate__pulse animate__infinite" style="animation-duration:1.3s;"></i>
                                         <span>TikTok</span>
                                     </a>
                                 </div>
                                 
                                 <div class="col-lg-6 col-md-6 col-sm-10 mb-3">
                                     <a href="https://www.instagram.com/cirquedusoleil/" target="_blank" class="social-link instagram">
-                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-instagram wow animate__animated animate__pulse animate__infinite" style="animation-duration:1.3s;"></i>
                                         <span>Instagram</span>
                                     </a>
                                 </div>
                                 
                                 <div class="col-lg-6 col-md-6 col-sm-10 mb-3">
                                     <a href="https://www.facebook.com/CirqueduSoleil" target="_blank" class="social-link facebook">
-                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-facebook-f wow animate__animated animate__pulse animate__infinite" style="animation-duration:1.3s;"></i>
                                         <span>Facebook</span>
                                     </a>
                                 </div>
                                 
                                 <div class="col-lg-6 col-md-6 col-sm-10 mb-3">
                                     <a href="https://www.youtube.com/user/cirquedusoleil" target="_blank" class="social-link youtube">
-                                        <i class="fab fa-youtube"></i>
+                                        <i class="fab fa-youtube wow animate__animated animate__pulse animate__infinite" style="animation-duration:1s;"></i>
                                         <span>YouTube</span>
                                     </a>
                                 </div>
@@ -300,7 +344,7 @@
     </section>
 
     <!--Seccion 3: Mapa -->
-    <section class="seccion-mapa" id="mapa">
+    <section class="seccion-mapa" id="encuentranos">
       
         <div class="mapa-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3220.685405736956!2d-115.17692908449246!3d36.12775478009097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c43b6de52b8d%3A0xe176139ca4b4b8b3!2sLas%20Vegas%20Strip%2C%20Las%20Vegas%2C%20NV%2C%20USA!5e0!3m2!1sen!2sus!4v1698567890123!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -369,7 +413,7 @@
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
     
-    <!-- Script audio -->
+    <!-- audio -->
     <script>
         let isPlaying = false;
         const audio = document.getElementById('backgroundAudio');
@@ -400,6 +444,50 @@
             audioIcon.classList.add('fa-play');
             btnText.textContent = 'Reproducir Audio';
             isPlaying = false;
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.custom-navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const conectaDropdown = document.querySelector('#navbarDropdown');
+            
+            if (conectaDropdown) {
+                conectaDropdown.addEventListener('click', function(e) {
+                    if (window.innerWidth >= 992) {
+                        const dropdown = document.querySelector('.dropdown-menu');
+                        if (!dropdown.classList.contains('show')) {
+                            document.querySelector('#conecta').scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    } else {
+                        return true;
+                    }
+                });
+            }
+        });
+
+        document.querySelectorAll('.nav-link, .dropdown-item').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.classList.contains('dropdown-toggle')) {
+                    return;
+                }
+                
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            });
         });
     </script>
   
