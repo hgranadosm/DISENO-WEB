@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Fuente personalizada local */
+@font-face {
+    font-family: 'Pangaia';
+    src: url('../fonts/Pangaia/Pangaia-Regular.woff2') format('woff2'),
+         url('../fonts/Pangaia/Pangaia-Regular.woff') format('woff'),
+         url('../fonts/Pangaia/Pangaia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pangaia';
+    src: url('../fonts/Pangaia/Pangaia-Bold.woff2') format('woff2'),
+         url('../fonts/Pangaia/Pangaia-Bold.woff') format('woff'),
+         url('../fonts/Pangaia/Pangaia-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-display: swap;
+}
+
+html{
+    font-size: 18px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Variables para Glow Spa */
+$titulo1: 3rem;
+$subtitulos: 1.5rem;
+$parrafos: 1rem;
+$iconos: 1rem;
+
+/* Variables de fuentes */
+$font-titles: 'Pangaia', serif;
+$font-body: 'Open Sans', sans-serif;
+
+$textoblanco: #fff;
+$textonegro: #000;
+$titulos-color: #d5b8a6; 
+$textos-color: #605e5b;
+$color-background-principal: #f2e8dc;
+$color_botones:  #d5b8a6;
+
+/* Variables para el banner */
+$altura-banner: 100vh;
+$padding-navbar: 15px;
+$video-ruta: '../videos/video.mp4';
+$overlay-opacity: 0.4;
+
+/*anidamiento para el navbar*/
+.custom-navbar {
+    padding: $padding-navbar 0;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+    .navbar-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .nav-link {
+        color: $textoblanco;
+        font-weight: 500;
+        
+        &:hover {
+            color: $color_botones;
+        }
+        
+        &.active {
+            color: $color_botones;
+        }
+    }
+}
+
+/*anidamiento para el banner*/
+.banner-section {
+    height: $altura-banner;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+    }
+    
+    .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, $overlay-opacity);
+        z-index: -1;
+    }
+    
+    .banner-content {
+        position: relative;
+        z-index: 1;
+        padding-top: 80px;
+    }
+    
+    .banner-title {
+        font-size: $titulo1;
+        font-weight: 700;
+        font-family: $font-titles;
+        margin-bottom: 30px;
+    }
+    
+    .banner-subtitle {
+        font-size: $parrafos;
+        font-family: $font-body;
+        margin-bottom: 40px;
+        opacity: 0.9;
+    }
+}
+
+/*anidamiento para botones*/
+.btn-banner {
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: $textoblanco;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: $color_botones;
+        color: $textoblanco;
+        transform: translateY(-2px);
+    }
+    
+    i {
+        font-size: $iconos;
+    }
+}
+
+/*anidamiento para sección iconográfica*/
+.seccion-iconografica {
+    padding: 100px 0 100px 0;
+    background: $color-background-principal;
+    
+    .titulo-seccion {
+        font-family: $font-titles;
+        font-size: $titulo1;
+        color: $titulos-color;
+        margin-bottom: 20px;
+    }
+    
+    .subtitulo-seccion {
+        font-family: $font-body;
+        font-size: $parrafos;
+        color: $textos-color;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .icono-card {
+        padding: 40px 30px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        height: 100%;
+    
+        
+        .icono-container {
+            width: 80px;
+            height: 80px;
+            background: $color_botones;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.1) rotate(5deg);
+            }
+        }
+        
+        .icono-spa {
+            font-size: 2rem;
+            color: $textoblanco;
+        }
+        
+        .titulo-icono {
+            font-family: $font-titles;
+            font-size: $subtitulos;
+            color: $titulos-color;
+            font-weight: 600;
+        }
+        
+        .descripcion-icono {
+            font-family: $parrafos;
+            font-size: 1rem;
+            color: $textos-color;
+            line-height: 1.6;
+            margin: 0;
+        }
+    }
+}
+
+/*anidamiento para sección servicios*/
+.seccion-servicios {
+    background: $color-background-principal;
+    padding: 80px 0;
+    
+    .contenido-servicios {
+        padding-right: 40px;
+        
+        @media (max-width: 991px) {
+            padding-right: 0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+    
+    .titulo-servicios {
+        font-family: $font-titles;
+        font-size: $titulo1;
+        color: $titulos-color;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 30px;
+        
+        @media (max-width: 991px) {
+            text-align: center;
+            font-size: $titulo1;
+        }
+    }
+    
+    .descripcion-servicios {
+        margin-bottom: 40px;
+        
+        .texto-servicios {
+            font-family: $font-body;
+            font-size: $parrafos;
+            color: $textos-color;
+            line-height: 1.8;
+            text-align: left;
+            
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+        }
+    }
+    
+    .boton-servicios {
+        .btn-servicios {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 30px;
+            background: transparent;
+            border: 2px solid $color_botones;
+            border-radius: 50px;
+            color: $color_botones;
+            font-family: $font-body;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: $color_botones;
+                color: $textoblanco;
+                text-decoration: none;
+                
+                i {
+                    transform: translateX(5px);
+                }
+            }
+            
+            i {
+                font-size: 0.9rem;
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+    
+    .imagen-servicios {
+        .imagen-spa {
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(124, 152, 133, 0.15);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 20px 50px rgba(124, 152, 133, 0.2);
+            }
+        }
+    }
+}
+
+/*títulos generales*/
+h1 {
+    font-size: $titulo1;
+    font-family: $font-titles;
+    color: $titulos-color;
+}
+
+h2 {
+    font-size: $titulo1;
+    font-family: $font-titles;
+    color: $titulos-color;
+}
+
+h3 {
+    font-size: $titulo1;
+    font-family: $font-titles;
+    color: $titulos-color;
+    font-weight: bolder;
+}
+
+h5 {
+    font-size: $titulo1;
+    font-family: $font-titles;
+    color: $titulos-color;
+    font-weight: bolder;
+}
+
+p {
+    font-size: $parrafos;
+    font-family: $font-body;
+    color: $textos-color;
+}
+
+

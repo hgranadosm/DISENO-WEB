@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* Fuente personalizada local */
+@font-face {
+  font-family: "Pangaia";
+  src: url("../fonts/Pangaia/Pangaia-Regular.woff2") format("woff2"), url("../fonts/Pangaia/Pangaia-Regular.woff") format("woff"), url("../fonts/Pangaia/Pangaia-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pangaia";
+  src: url("../fonts/Pangaia/Pangaia-Bold.woff2") format("woff2"), url("../fonts/Pangaia/Pangaia-Bold.woff") format("woff"), url("../fonts/Pangaia/Pangaia-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+}
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Variables para Glow Spa */
+/* Variables de fuentes */
+/* Variables para el banner */
+/*anidamiento para el navbar*/
+.custom-navbar {
+  padding: 15px 0;
+  background: transparent;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.custom-navbar .navbar-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.custom-navbar .nav-link {
+  color: #fff;
+  font-weight: 500;
+}
+.custom-navbar .nav-link:hover {
+  color: #d5b8a6;
+}
+.custom-navbar .nav-link.active {
+  color: #d5b8a6;
+}
+
+/*anidamiento para el banner*/
+.banner-section {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.banner-section .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+.banner-section .banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+.banner-section .banner-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+}
+.banner-section .banner-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Pangaia", serif;
+  margin-bottom: 30px;
+}
+.banner-section .banner-subtitle {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+/*anidamiento para botones*/
+.btn-banner {
+  padding: 15px 25px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.btn-banner:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #d5b8a6;
+  color: #fff;
+  transform: translateY(-2px);
+}
+.btn-banner i {
+  font-size: 1rem;
+}
+
+/*anidamiento para sección iconográfica*/
+.seccion-iconografica {
+  padding: 100px 0 100px 0;
+  background: #f2e8dc;
+}
+.seccion-iconografica .titulo-seccion {
+  font-family: "Pangaia", serif;
+  font-size: 3rem;
+  color: #d5b8a6;
+  margin-bottom: 20px;
+}
+.seccion-iconografica .subtitulo-seccion {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #605e5b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.seccion-iconografica .icono-card {
+  padding: 40px 30px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+.seccion-iconografica .icono-card .icono-container {
+  width: 80px;
+  height: 80px;
+  background: #d5b8a6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+.seccion-iconografica .icono-card .icono-container:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+.seccion-iconografica .icono-card .icono-spa {
+  font-size: 2rem;
+  color: #fff;
+}
+.seccion-iconografica .icono-card .titulo-icono {
+  font-family: "Pangaia", serif;
+  font-size: 1.5rem;
+  color: #d5b8a6;
+  font-weight: 600;
+}
+.seccion-iconografica .icono-card .descripcion-icono {
+  font-family: 1rem;
+  font-size: 1rem;
+  color: #605e5b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/*anidamiento para sección servicios*/
+.seccion-servicios {
+  background: #f2e8dc;
+  padding: 80px 0;
+}
+.seccion-servicios .contenido-servicios {
+  padding-right: 40px;
+}
+@media (max-width: 991px) {
+  .seccion-servicios .contenido-servicios {
+    padding-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+.seccion-servicios .titulo-servicios {
+  font-family: "Pangaia", serif;
+  font-size: 3rem;
+  color: #d5b8a6;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .seccion-servicios .titulo-servicios {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+.seccion-servicios .descripcion-servicios {
+  margin-bottom: 40px;
+}
+.seccion-servicios .descripcion-servicios .texto-servicios {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #605e5b;
+  line-height: 1.8;
+  text-align: left;
+}
+@media (max-width: 991px) {
+  .seccion-servicios .descripcion-servicios .texto-servicios {
+    text-align: center;
+  }
+}
+.seccion-servicios .boton-servicios .btn-servicios {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  background: transparent;
+  border: 2px solid #d5b8a6;
+  border-radius: 50px;
+  color: #d5b8a6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.seccion-servicios .boton-servicios .btn-servicios:hover {
+  background: #d5b8a6;
+  color: #fff;
+  text-decoration: none;
+}
+.seccion-servicios .boton-servicios .btn-servicios:hover i {
+  transform: translateX(5px);
+}
+.seccion-servicios .boton-servicios .btn-servicios i {
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+.seccion-servicios .imagen-servicios .imagen-spa {
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(124, 152, 133, 0.15);
+  transition: all 0.3s ease;
+}
+.seccion-servicios .imagen-servicios .imagen-spa:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 50px rgba(124, 152, 133, 0.2);
+}
+
+/*títulos generales*/
+h1 {
+  font-size: 3rem;
+  font-family: "Pangaia", serif;
+  color: #d5b8a6;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Pangaia", serif;
+  color: #d5b8a6;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: "Pangaia", serif;
+  color: #d5b8a6;
+  font-weight: bolder;
+}
+
+h5 {
+  font-size: 3rem;
+  font-family: "Pangaia", serif;
+  color: #d5b8a6;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #605e5b;
+}/*# sourceMappingURL=index.css.map */
