@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @font-face {
   font-family: "Pangaia";
@@ -364,6 +365,174 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+}
+
+/*sección parallax*/
+.seccion-parallax {
+  position: relative;
+  height: 80vh;
+  background-image: url("../img/inicio/2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.seccion-parallax .parallax-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.seccion-parallax .parallax-content {
+  position: relative;
+  z-index: 2;
+}
+.seccion-parallax .parallax-content .parallax-title {
+  font-family: "Pangaia", serif;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.seccion-parallax .parallax-content .parallax-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/*carousel banner*/
+.banner-carousel-section {
+  height: 100vh;
+  position: relative;
+}
+.banner-carousel-section .carousel {
+  height: 100%;
+}
+.banner-carousel-section .carousel .carousel-inner {
+  height: 100%;
+}
+.banner-carousel-section .carousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+.banner-carousel-section .carousel .carousel-inner .carousel-item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner-carousel-section .carousel-control-prev-icon,
+.banner-carousel-section .carousel-control-next-icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(213, 184, 166, 0.3);
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+.banner-carousel-section .carousel-control-prev-icon:hover,
+.banner-carousel-section .carousel-control-next-icon:hover {
+  background-color: rgba(213, 184, 166, 0.6);
+  transform: scale(1.1);
+}
+.banner-carousel-section .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d5b8a6' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.banner-carousel-section .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d5b8a6' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/*footer*/
+.footer-section {
+  background: #f2e8dc;
+  border-top: 1px solid #d5b8a6;
+}
+.footer-section .footer-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.footer-section .footer-tagline {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #605e5b;
+  margin: 0;
+}
+.footer-section .footer-nav .footer-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #605e5b;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+.footer-section .footer-nav .footer-link:hover {
+  color: #d5b8a6;
+}
+.footer-section .footer-nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  gap: 1.5rem;
+}
+@media (max-width: 991px) {
+  .footer-section .footer-nav ul {
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+}
+.footer-section .footer-social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .footer-section .footer-social {
+    justify-content: flex-end;
+  }
+}
+.footer-section .footer-social .social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #d5b8a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d5b8a6;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer-section .footer-social .social-icon:hover {
+  background: #d5b8a6;
+  color: #fff;
+  border-color: #d5b8a6;
+  transform: translateY(-3px);
+}
+.footer-section .footer-social .social-icon i {
+  font-size: 1rem;
+}
+.footer-section .footer-divider {
+  border: 0;
+  border-top: 1px solid rgba(213, 184, 166, 0.3);
+  margin: 20px 0;
+}
+.footer-section .footer-copyright {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+  color: #605e5b;
+  opacity: 0.8;
 }
 
 h1 {
