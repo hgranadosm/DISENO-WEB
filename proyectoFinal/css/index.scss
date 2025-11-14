@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* Fuente personalizada local */
 @font-face {
     font-family: 'Pangaia';
     src: url('../fonts/Pangaia/Pangaia-Regular.woff2') format('woff2'),
@@ -19,21 +18,11 @@
     font-display: swap;
 }
 
-html{
-    font-size: 18px;
-}
-
-body {
-    font-family: "Open Sans", sans-serif;
-}
-
-/* Variables para Glow Spa */
 $titulo1: 3rem;
 $subtitulos: 1.5rem;
 $parrafos: 1rem;
 $iconos: 1rem;
 
-/* Variables de fuentes */
 $font-titles: 'Pangaia', serif;
 $font-body: 'Open Sans', sans-serif;
 
@@ -44,13 +33,21 @@ $textos-color: #605e5b;
 $color-background-principal: #f2e8dc;
 $color_botones:  #d5b8a6;
 
-/* Variables para el banner */
 $altura-banner: 100vh;
 $padding-navbar: 15px;
 $video-ruta: '../videos/video.mp4';
 $overlay-opacity: 0.4;
 
-/*anidamiento para el navbar*/
+
+html{
+    font-size: 18px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: $color-background-principal;
+}
+
 .custom-navbar {
     padding: $padding-navbar 0;
     background: transparent;
@@ -81,7 +78,6 @@ $overlay-opacity: 0.4;
     }
 }
 
-/*anidamiento para el banner*/
 .banner-section {
     height: $altura-banner;
     position: relative;
@@ -129,7 +125,6 @@ $overlay-opacity: 0.4;
     }
 }
 
-/*anidamiento para botones*/
 .btn-banner {
     padding: 15px 25px;
     border-radius: 50px;
@@ -152,7 +147,6 @@ $overlay-opacity: 0.4;
     }
 }
 
-/*anidamiento para sección iconográfica*/
 .seccion-iconografica {
     padding: 100px 0 100px 0;
     background: $color-background-principal;
@@ -217,7 +211,6 @@ $overlay-opacity: 0.4;
     }
 }
 
-/*anidamiento para sección servicios*/
 .seccion-servicios {
     background: $color-background-principal;
     padding: 80px 0;
@@ -295,20 +288,146 @@ $overlay-opacity: 0.4;
     }
     
     .imagen-servicios {
+        position: relative;
+        width: 100%;
+        padding-top: 60%; 
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(124, 152, 133, 0.15);
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(124, 152, 133, 0.2);
+        }
+        
         .imagen-spa {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
             border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(124, 152, 133, 0.15);
-            transition: all 0.3s ease;
-            
-            &:hover {
-                transform: scale(1.02);
-                box-shadow: 0 20px 50px rgba(124, 152, 133, 0.2);
-            }
         }
     }
 }
 
-/*títulos generales*/
+.linea-divisora {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid $titulos-color;
+    background-color: $color-background-principal;
+}
+
+.seccion-servicios-alt {
+    background: $color-background-principal;
+    padding: 80px 0;
+    
+    .contenido-servicios-alt {
+        padding-left: 40px;
+        
+        @media (max-width: 991px) {
+            padding-left: 0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+    
+    .titulo-servicios-alt {
+        font-family: $font-titles;
+        font-size: $titulo1;
+        color: $titulos-color;
+        font-weight: 300;
+        text-align: right;
+        margin-bottom: 30px;
+        
+        @media (max-width: 991px) {
+            text-align: center;
+            font-size: $titulo1;
+        }
+    }
+    
+    .descripcion-servicios-alt {
+        margin-bottom: 40px;
+        
+        .texto-servicios-alt {
+            font-family: $font-body;
+            font-size: $parrafos;
+            color: $textos-color;
+            line-height: 1.8;
+            text-align: right;
+            
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+        }
+    }
+    
+    .boton-servicios-alt {
+        text-align: right;
+        
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+        
+        .btn-servicios {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 30px;
+            background: transparent;
+            border: 2px solid $color_botones;
+            border-radius: 50px;
+            color: $color_botones;
+            font-family: $font-body;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: $color_botones;
+                color: $textoblanco;
+                text-decoration: none;
+                
+                i {
+                    transform: translateX(5px);
+                }
+            }
+            
+            i {
+                font-size: 0.9rem;
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+    
+    .imagen-servicios {
+        position: relative;
+        width: 100%;
+        padding-top: 70%; 
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(124, 152, 133, 0.15);
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(124, 152, 133, 0.2);
+        }
+        
+        .imagen-spa {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 20px;
+        }
+    }
+}
+
 h1 {
     font-size: $titulo1;
     font-family: $font-titles;

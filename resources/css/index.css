@@ -1,6 +1,4 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-/* Fuente personalizada local */
 @font-face {
   font-family: "Pangaia";
   src: url("../fonts/Pangaia/Pangaia-Regular.woff2") format("woff2"), url("../fonts/Pangaia/Pangaia-Regular.woff") format("woff"), url("../fonts/Pangaia/Pangaia-Regular.ttf") format("truetype");
@@ -19,12 +17,9 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #f2e8dc;
 }
 
-/* Variables para Glow Spa */
-/* Variables de fuentes */
-/* Variables para el banner */
-/*anidamiento para el navbar*/
 .custom-navbar {
   padding: 15px 0;
   background: transparent;
@@ -51,7 +46,6 @@ body {
   color: #d5b8a6;
 }
 
-/*anidamiento para el banner*/
 .banner-section {
   height: 100vh;
   position: relative;
@@ -95,7 +89,6 @@ body {
   opacity: 0.9;
 }
 
-/*anidamiento para botones*/
 .btn-banner {
   padding: 15px 25px;
   border-radius: 50px;
@@ -117,7 +110,6 @@ body {
   font-size: 1rem;
 }
 
-/*anidamiento para sección iconográfica*/
 .seccion-iconografica {
   padding: 100px 0 100px 0;
   background: #f2e8dc;
@@ -173,7 +165,6 @@ body {
   margin: 0;
 }
 
-/*anidamiento para sección servicios*/
 .seccion-servicios {
   background: #f2e8dc;
   padding: 80px 0;
@@ -243,17 +234,138 @@ body {
   font-size: 0.9rem;
   transition: transform 0.3s ease;
 }
-.seccion-servicios .imagen-servicios .imagen-spa {
+.seccion-servicios .imagen-servicios {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(124, 152, 133, 0.15);
   transition: all 0.3s ease;
 }
-.seccion-servicios .imagen-servicios .imagen-spa:hover {
+.seccion-servicios .imagen-servicios:hover {
   transform: scale(1.02);
   box-shadow: 0 20px 50px rgba(124, 152, 133, 0.2);
 }
+.seccion-servicios .imagen-servicios .imagen-spa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
 
-/*títulos generales*/
+.linea-divisora {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #d5b8a6;
+  background-color: #f2e8dc;
+}
+
+.seccion-servicios-alt {
+  background: #f2e8dc;
+  padding: 80px 0;
+}
+.seccion-servicios-alt .contenido-servicios-alt {
+  padding-left: 40px;
+}
+@media (max-width: 991px) {
+  .seccion-servicios-alt .contenido-servicios-alt {
+    padding-left: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+.seccion-servicios-alt .titulo-servicios-alt {
+  font-family: "Pangaia", serif;
+  font-size: 3rem;
+  color: #d5b8a6;
+  font-weight: 300;
+  text-align: right;
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .seccion-servicios-alt .titulo-servicios-alt {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+.seccion-servicios-alt .descripcion-servicios-alt {
+  margin-bottom: 40px;
+}
+.seccion-servicios-alt .descripcion-servicios-alt .texto-servicios-alt {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #605e5b;
+  line-height: 1.8;
+  text-align: right;
+}
+@media (max-width: 991px) {
+  .seccion-servicios-alt .descripcion-servicios-alt .texto-servicios-alt {
+    text-align: center;
+  }
+}
+.seccion-servicios-alt .boton-servicios-alt {
+  text-align: right;
+}
+@media (max-width: 991px) {
+  .seccion-servicios-alt .boton-servicios-alt {
+    text-align: center;
+  }
+}
+.seccion-servicios-alt .boton-servicios-alt .btn-servicios {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  background: transparent;
+  border: 2px solid #d5b8a6;
+  border-radius: 50px;
+  color: #d5b8a6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.seccion-servicios-alt .boton-servicios-alt .btn-servicios:hover {
+  background: #d5b8a6;
+  color: #fff;
+  text-decoration: none;
+}
+.seccion-servicios-alt .boton-servicios-alt .btn-servicios:hover i {
+  transform: translateX(5px);
+}
+.seccion-servicios-alt .boton-servicios-alt .btn-servicios i {
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+.seccion-servicios-alt .imagen-servicios {
+  position: relative;
+  width: 100%;
+  padding-top: 70%;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(124, 152, 133, 0.15);
+  transition: all 0.3s ease;
+}
+.seccion-servicios-alt .imagen-servicios:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 50px rgba(124, 152, 133, 0.2);
+}
+.seccion-servicios-alt .imagen-servicios .imagen-spa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
 h1 {
   font-size: 3rem;
   font-family: "Pangaia", serif;
