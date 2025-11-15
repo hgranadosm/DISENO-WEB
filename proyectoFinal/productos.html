@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+    <link rel="icon" href="img/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="css/index.css " />
+    <link rel="stylesheet" href="css/reglas.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="inicio.html">
+          <img src="img/logo.png" alt="Cirque du Soleil" class="navbar-logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse gap-4 navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav gap-4 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="banner-carousel-section">
+      <div
+        id="carouselNosotros"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+        data-bs-pause="hover"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/inicio/1.jpg" class="d-block w-100" alt="Glow Spa" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/inicio/2.jpg" class="d-block w-100" alt="Glow Spa" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/inicio/3.jpg" class="d-block w-100" alt="Glow Spa" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/inicio/4.jpg" class="d-block w-100" alt="Glow Spa" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/inicio/5.jpg" class="d-block w-100" alt="Glow Spa" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/inicio/7.jpg" class="d-block w-100" alt="Glow Spa" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/inicio/8.jpg" class="d-block w-100" alt="Glow Spa" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselNosotros"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselNosotros"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="seccion-intro-servicios py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="titulo-principal">Nuestros Productos Exclusivos</h1>
+            <p class="subtitulo-principal">
+              En Glow Spa seleccionamos productos diseñados para cuidar tu piel, tu cuerpo y tu bienestar diario. Cada artículo ha sido elegido por su calidad, ingredientes naturales y resultados comprobados. Descubrí nuestro catálogo y encontrá el complemento perfecto para tu rutina.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-catalogo-productos py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="titulo-catalogo">Cuidado Facial & Corporal</h2>
+            <p class="descripcion-catalogo">
+              Productos elaborados con extractos naturales pensados para hidratar, iluminar, exfoliar y nutrir la piel. Ideales para complementar tus tratamientos Glow Spa.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/inicio/1.jpg" alt="Crema Hidratante GlowSkin" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Crema Hidratante GlowSkin</h3>
+                <p class="producto-descripcion">
+                  Hidratación profunda con ácido hialurónico.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto1">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/inicio/2.jpg" alt="Mascarilla Facial Detox" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Mascarilla Facial Detox</h3>
+                <p class="producto-descripcion">
+                  Limpieza intensa y control de impurezas.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto2">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/inicio/3.jpg" alt="Aceite Esencial de Lavanda" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Aceite Esencial de Lavanda</h3>
+                <p class="producto-descripcion">
+                  Relajación total para cuerpo y mente.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto3">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/inicio/4.jpg" alt="Crema Corporal Vainilla Blossom" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Crema Corporal Vainilla Blossom</h3>
+                <p class="producto-descripcion">
+                  Nutrición + fragancia suave y duradera.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto4">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/inicio/5.jpg" alt="Exfoliante Herbal de Rosas" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Exfoliante Herbal de Rosas</h3>
+                <p class="producto-descripcion">
+                  Renueva la piel con partículas naturales.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto5">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/inicio/7.jpg" alt="Gel Facial Iluminador" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Gel Facial Iluminador con Vitamina C</h3>
+                <p class="producto-descripcion">
+                  Mejora la luminosidad de la piel al instante.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto6">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="linea-divisora"></div>
+
+    <section class="seccion-catalogo-productos py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="titulo-catalogo">Aromaterapia · Kits de Regalo · Wellness</h2>
+            <p class="descripcion-catalogo">
+              Regalos perfectos y productos diseñados para crear ambientes relajantes. Aromas naturales, texturas suaves y kits pensados para consentirte.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/nosotros/1.jpg" alt="Vela Aromática Calm" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Vela Aromática Calm</h3>
+                <p class="producto-descripcion">
+                  Aroma a eucalipto y romero para crear un ambiente relajante.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto7">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/nosotros/2.jpg" alt="Kit Glow Relax" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Kit Glow Relax (3 piezas)</h3>
+                <p class="producto-descripcion">
+                  Incluye exfoliante, crema hidratante y mini vela.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto8">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/nosotros/3.jpg" alt="Difusor de Aromas Bamboo" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Difusor de Aromas Bamboo</h3>
+                <p class="producto-descripcion">
+                  Perfuma tu espacio de forma elegante y natural.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto9">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/nosotros/4.jpg" alt="Aceite Corporal Warm Therapy" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Aceite Corporal Warm Therapy</h3>
+                <p class="producto-descripcion">
+                  Mejora la circulación y relaja músculos tensos.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto10">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/nosotros/5.jpg" alt="Set Spa en Casa" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Set Spa en Casa</h3>
+                <p class="producto-descripcion">
+                  Mini facial + exfoliante corporal + mascarilla.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto11">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="producto-card">
+              <div class="producto-imagen">
+                <img src="img/nosotros/6.jpg" alt="Spray Aromático Pillow Mist" />
+              </div>
+              <div class="producto-contenido">
+                <h3 class="producto-titulo">Spray Aromático Pillow Mist</h3>
+                <p class="producto-descripcion">
+                  Aroma suave para dormir mejor.
+                </p>
+                <button class="btn-producto" data-bs-toggle="modal" data-bs-target="#producto12">
+                  Más detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-cta-productos py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="cta-titulo">Llevá la experiencia Glow Spa a tu casa</h2>
+            <p class="cta-descripcion">
+              Elegí tus productos favoritos y transformá tu rutina en un ritual de bienestar.
+            </p>
+            <a href="https://wa.me/50612345678" class="btn-cta" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar disponibilidad
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODALS -->
+    <div class="modal fade" id="producto1" tabindex="-1" aria-labelledby="producto1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto1Label">Crema Hidratante GlowSkin</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/inicio/1.jpg" alt="Crema Hidratante GlowSkin" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Formulada con ácido hialurónico, extracto de aloe vera y manteca de karité. Proporciona hidratación intensa y ayuda a mejorar la textura de la piel.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Hidratación por 24 horas</li>
+                  <li>Mejora la elasticidad</li>
+                  <li>Ideal para piel normal y seca</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="producto2" tabindex="-1" aria-labelledby="producto2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto2Label">Mascarilla Detox Purificante</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/inicio/2.jpg" alt="Mascarilla Detox" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Mascarilla de arcilla volcánica que elimina impurezas, reduce brillo y deja la piel fresca y suave.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Limpieza profunda</li>
+                  <li>Control de grasa</li>
+                  <li>Sensación de frescura inmediata</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal  -->
+    <div class="modal fade" id="producto3" tabindex="-1" aria-labelledby="producto3Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto3Label">Aceite Esencial de Lavanda</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/inicio/3.jpg" alt="Aceite de Lavanda" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Aceite 100% natural ideal para masajes, aromaterapia y relajación.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Reduce estrés</li>
+                  <li>Mejora el sueño</li>
+                  <li>Aroma suave y floral</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="producto4" tabindex="-1" aria-labelledby="producto4Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto4Label">Crema Corporal Vainilla Blossom</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/inicio/4.jpg" alt="Crema Corporal" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Crema ultra hidratante con extracto de vainilla, manteca de cacao y aceite de coco. Nutre profundamente y deja un aroma delicado.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Nutrición intensa</li>
+                  <li>Fragancia duradera</li>
+                  <li>Textura sedosa y ligera</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal  -->
+    <div class="modal fade" id="producto5" tabindex="-1" aria-labelledby="producto5Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto5Label">Exfoliante Herbal de Rosas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/inicio/5.jpg" alt="Exfoliante" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Exfoliante suave con pétalos de rosa, azúcar orgánico y aceite de almendras. Elimina células muertas sin irritar.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Renueva la piel</li>
+                  <li>Mejora absorción de cremas</li>
+                  <li>Aroma natural de rosas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="producto6" tabindex="-1" aria-labelledby="producto6Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto6Label">Gel Facial Iluminador con Vitamina C</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/inicio/7.jpg" alt="Gel Iluminador" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Gel ligero con vitamina C, niacinamida y extracto de papaya. Mejora la luminosidad y reduce manchas.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Ilumina la piel</li>
+                  <li>Reduce manchas y tono desigual</li>
+                  <li>Textura fresca y no grasosa</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal  -->
+    <div class="modal fade" id="producto7" tabindex="-1" aria-labelledby="producto7Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto7Label">Vela Aromática Calm</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/nosotros/1.jpg" alt="Vela Aromática" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Vela artesanal con aceite esencial de eucalipto y romero. Diseñada para crear un ambiente tranquilo y purificar el aire.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Duración 30–40 horas</li>
+                  <li>Aroma suave y relajante</li>
+                  <li>Cerámica reutilizable</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal  -->
+    <div class="modal fade" id="producto8" tabindex="-1" aria-labelledby="producto8Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto8Label">Kit Glow Relax</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/nosotros/2.jpg" alt="Kit Glow Relax" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Un kit perfecto para regalar bienestar. Incluye exfoliante corporal, manteca hidratante y una vela aromática.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Ideal para relajación</li>
+                  <li>Ingredientes orgánicos</li>
+                  <li>Presentación elegante</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal  -->
+    <div class="modal fade" id="producto9" tabindex="-1" aria-labelledby="producto9Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto9Label">Difusor de Aromas Bamboo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/nosotros/3.jpg" alt="Difusor Bamboo" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Difusor eléctrico con acabado en bambú natural. Su función de vapor frío dispersa aromas sin dañar el ambiente.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>3 niveles de intensidad</li>
+                  <li>Silencioso</li>
+                  <li>Ideal para spa o dormitorio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal  -->
+    <div class="modal fade" id="producto10" tabindex="-1" aria-labelledby="producto10Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto10Label">Aceite Corporal Warm Therapy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/nosotros/4.jpg" alt="Aceite Warm Therapy" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Aceite corporal con extracto de jengibre y canela. Genera calor suave para mejorar la circulación y relajar músculos.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Mejora la circulación</li>
+                  <li>Alivia tensión muscular</li>
+                  <li>Aroma cálido y especiado</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal  -->
+    <div class="modal fade" id="producto11" tabindex="-1" aria-labelledby="producto11Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto11Label">Set Spa en Casa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/nosotros/5.jpg" alt="Set Spa en Casa" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Set completo para disfrutar de un spa en casa. Incluye mini facial, exfoliante corporal y mascarilla de arcilla.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Experiencia completa de spa</li>
+                  <li>Productos de tamaño perfecto</li>
+                  <li>Ideal para regalo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="producto12" tabindex="-1" aria-labelledby="producto12Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="producto12Label">Spray Aromático Pillow Mist</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/nosotros/6.jpg" alt="Pillow Mist" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6">
+                <p class="modal-descripcion">
+                  Spray aromático con lavanda, manzanilla y valeriana. Rocía sobre la almohada para un sueño profundo y reparador.
+                </p>
+                <h6 class="modal-beneficios-titulo">Beneficios:</h6>
+                <ul class="modal-beneficios-lista">
+                  <li>Facilita el sueño</li>
+                  <li>Aroma suave y relajante</li>
+                  <li>Fórmula natural sin alcohol</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-modal-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/50612345678" class="btn-modal-consultar" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div
+            class="col-lg-2 col-md-12 text-center text-lg-start mb-4 mb-lg-0"
+          >
+            <img
+              src="img/logo.png"
+              alt="Glow Spa Logo"
+              class="footer-logo mb-3"
+            />
+          </div>
+
+          <div class="col-lg-8 col-md-12 mb-4 mb-lg-0">
+            <nav class="footer-nav">
+              <ul
+                class="list-unstyled d-flex flex-wrap justify-content-center gap-4 mb-0"
+              >
+                <li><a href="inicio.html" class="footer-link">Inicio</a></li>
+                <li>
+                  <a href="nosotros.html" class="footer-link">Nosotros</a>
+                </li>
+                <li>
+                  <a href="servicios.html" class="footer-link">Servicios</a>
+                </li>
+                <li>
+                  <a href="productos.html" class="footer-link">Productos</a>
+                </li>
+                <li>
+                  <a href="promociones.html" class="footer-link">Promociones</a>
+                </li>
+                <li><a href="galeria.html" class="footer-link">Galería</a></li>
+                <li>
+                  <a href="contacto.html" class="footer-link">Contacto</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-lg-2 col-md-12 text-center text-lg-end">
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/"
+                class="social-icon"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                class="social-icon"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://x.com/" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/login"
+                class="social-icon"
+                aria-label="TikTok"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <hr class="footer-divider" />
+            <p class="footer-copyright text-center mb-0">
+              &copy; 2025 Glow Spa. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
