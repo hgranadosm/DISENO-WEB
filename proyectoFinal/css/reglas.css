@@ -744,6 +744,38 @@
     .seccion-ubicacion .mapa-container iframe {
         height: 350px;
     }
+    
+    .seccion-sedes-spa {
+        padding: 35px 0 !important;
+    }
+    
+    .seccion-sedes-spa .titulo-sedes {
+        font-size: 1.8rem;
+        margin-bottom: 14px;
+    }
+    
+    .seccion-sedes-spa .descripcion-sedes {
+        font-size: 0.88rem;
+        padding: 0 15px;
+    }
+    
+    .lista-sedes {
+        border-radius: 12px !important;
+    }
+    
+    .lista-sedes .list-group-item-header {
+        font-size: 1rem !important;
+        padding: 18px 20px !important;
+    }
+    
+    .lista-sedes .sede-link {
+        font-size: 0.95rem !important;
+        padding: 18px 20px !important;
+    }
+    
+    .lista-sedes .sede-link:hover {
+        transform: translateX(8px) !important;
+    }
 }
 
 @media (min-width: 375px) and (max-width: 575px) {
@@ -813,8 +845,48 @@
     .seccion-ubicacion .mapa-container iframe {
         height: 320px;
     }
+    
+    .seccion-sedes-spa {
+        padding: 30px 0 !important;
+    }
+    
+    .seccion-sedes-spa .titulo-sedes {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+        padding: 0 10px;
+    }
+    
+    .seccion-sedes-spa .descripcion-sedes {
+        font-size: 0.85rem;
+        padding: 0 10px;
+    }
+    
+    .lista-sedes {
+        border-radius: 10px !important;
+    }
+    
+    .lista-sedes .list-group-item-header {
+        font-size: 0.95rem !important;
+        padding: 16px 18px !important;
+        letter-spacing: 0.8px !important;
+    }
+    
+    .lista-sedes .sede-link {
+        font-size: 0.9rem !important;
+        padding: 16px 18px !important;
+    }
+    
+    .lista-sedes .sede-link:hover {
+        transform: translateX(6px) !important;
+        padding-left: 28px !important;
+    }
+    
+    .lista-sedes .sede-link i {
+        font-size: 1.05rem !important;
+    }
 }
 
+/* Mobile Small - 320px to 374px */
 @media (max-width: 374px) {
     .seccion-intro-contacto {
         padding-top: 40px !important;
@@ -947,5 +1019,32 @@
     
     .seccion-ubicacion .mapa-container iframe {
         height: 300px;
+    }
+    
+    .seccion-sedes-spa .titulo-sedes {
+        font-size: 1.4rem;
+    }
+    
+    .seccion-sedes-spa .descripcion-sedes {
+        font-size: 0.8rem;
+    }
+    
+    .lista-sedes {
+        border-radius: 12px !important;
+    }
+    
+    .lista-sedes .list-group-item-header {
+        font-size: 0.9rem !important;
+        padding: 15px 18px !important;
+        letter-spacing: 0.5px !important;
+    }
+    
+    .lista-sedes .sede-link {
+        font-size: 0.85rem !important;
+        padding: 16px 18px !important;
+    }
+    
+    .lista-sedes .sede-link i {
+        font-size: 1rem !important;
     }
 }

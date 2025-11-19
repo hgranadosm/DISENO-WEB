@@ -1656,6 +1656,79 @@ p {
   font-size: 1rem;
 }
 
+.seccion-sedes-spa {
+  background: #f2e8dc;
+}
+.seccion-sedes-spa .titulo-sedes {
+  font-family: "Pangaia", serif;
+  font-size: 3rem;
+  color: #d5b8a6;
+  margin-bottom: 15px;
+}
+.seccion-sedes-spa .descripcion-sedes {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #605e5b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.seccion-sedes-spa .lista-sedes {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(213, 184, 166, 0.2);
+  background: #fff;
+}
+.seccion-sedes-spa .lista-sedes .list-group-item-header {
+  background: linear-gradient(135deg, #d5b8a6 0%, rgb(226.0809160305, 206.1129770992, 193.7190839695) 100%);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 1.5px;
+  padding: 25px 30px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.seccion-sedes-spa .lista-sedes .sede-link {
+  background: #fff;
+  padding: 22px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.05rem;
+  color: #605e5b;
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid rgba(213, 184, 166, 0.15);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.seccion-sedes-spa .lista-sedes .sede-link:last-child {
+  border-bottom: none;
+}
+.seccion-sedes-spa .lista-sedes .sede-link i {
+  color: #d5b8a6;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+.seccion-sedes-spa .lista-sedes .sede-link:hover {
+  background: linear-gradient(135deg, rgba(213, 184, 166, 0.15) 0%, rgba(213, 184, 166, 0.08) 100%);
+  color: #d5b8a6;
+  transform: translateX(10px);
+  padding-left: 40px;
+}
+.seccion-sedes-spa .lista-sedes .sede-link:hover i {
+  color: #d5b8a6;
+  transform: scale(1.2) rotate(10deg);
+}
+.seccion-sedes-spa .lista-sedes .sede-link:focus {
+  background: rgba(213, 184, 166, 0.12);
+  color: #d5b8a6;
+  outline: none;
+  box-shadow: inset 0 0 0 2px rgba(213, 184, 166, 0.3);
+}
+
 .seccion-ubicacion {
   background: #f2e8dc;
 }
