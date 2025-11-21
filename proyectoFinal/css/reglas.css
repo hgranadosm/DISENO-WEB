@@ -1,6 +1,3 @@
-/* MEDIA QUERIES - VIDEO RESPONSIVE*/
-
-
 @media (min-width: 1400px) {
     .video-container-responsive {
         max-width: 1200px;
@@ -574,7 +571,6 @@
     }
 }
 
-/* MEDIA QUERIES - CONTACTO */
 
 @media (min-width: 1400px) {
     .seccion-intro-contacto .titulo-principal {
@@ -886,7 +882,6 @@
     }
 }
 
-/* Mobile Small - 320px to 374px */
 @media (max-width: 374px) {
     .seccion-intro-contacto {
         padding-top: 40px !important;
@@ -1058,5 +1053,73 @@
         padding: 20px 15px;
         border-radius: 0 0 15px 15px;
         backdrop-filter: blur(10px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .lightbox-container {
+        max-width: 95vw;
+    }
+    
+    .lightbox-image {
+        max-height: 70vh;
+    }
+    
+    .lightbox-prev {
+        left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .lightbox-next {
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .lightbox-close {
+        top: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .lightbox-caption {
+        bottom: 10px;
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+    
+    .lightbox-counter {
+        top: 10px;
+        left: 10px;
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lightbox-prev,
+    .lightbox-next {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .lightbox-close {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    
+    .lightbox-caption {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    
+    .lightbox-counter {
+        font-size: 0.75rem;
+        padding: 5px 10px;
     }
 }
