@@ -148,6 +148,15 @@ body {
 .seccion-iconografica .icono-card .icono-container:hover {
   transform: scale(1.1) rotate(5deg);
 }
+.seccion-iconografica .icono-card .icono-container .animate__delay-0_3s {
+  animation-delay: 0.3s;
+}
+.seccion-iconografica .icono-card .icono-container .animate__delay-0_6s {
+  animation-delay: 0.6s;
+}
+.seccion-iconografica .icono-card .icono-container .animate__delay-0_9s {
+  animation-delay: 0.9s;
+}
 .seccion-iconografica .icono-card .icono-spa {
   font-size: 2rem;
   color: #fff;
@@ -567,6 +576,16 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
+.seccion-galeria-nosotros .galeria-item.galeria-circular {
+  padding-top: 100%;
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  height: auto;
+}
+.seccion-galeria-nosotros .galeria-item .clip-path {
+  clip-path: circle(50% at 50% 50%);
+}
 .seccion-galeria-nosotros .galeria-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
@@ -583,6 +602,35 @@ body {
 }
 .seccion-galeria-nosotros .galeria-item:hover img {
   transform: scale(1.05);
+}
+.seccion-galeria-nosotros .equipo-info {
+  margin-top: 25px;
+}
+.seccion-galeria-nosotros .equipo-info .equipo-nombre {
+  font-family: "Pangaia", serif;
+  font-size: 1.4rem;
+  color: #d5b8a6;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.seccion-galeria-nosotros .equipo-info .equipo-puesto {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #d5b8a6;
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.seccion-galeria-nosotros .equipo-info .equipo-frase {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #605e5b;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0;
+  padding: 0 15px;
+  opacity: 0.9;
 }
 
 /*página de servicios*/

@@ -186,6 +186,18 @@ body {
             &:hover {
                 transform: scale(1.1) rotate(5deg);
             }
+
+            .animate__delay-0_3s{
+                animation-delay: 0.3s;
+            }
+
+            .animate__delay-0_6s {
+                animation-delay: 0.6s;
+            }
+
+            .animate__delay-0_9s {
+                animation-delay: 0.9s;
+            }
         }
         
         .icono-spa {
@@ -659,6 +671,19 @@ body {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
         
+         
+        &.galeria-circular {
+            padding-top: 100%; 
+            border-radius: 50%; 
+            width: 100%;
+            aspect-ratio: 1/1; 
+            height: auto; 
+        }
+
+        .clip-path {
+            clip-path: circle(50% at 50% 50%);
+        }
+        
         &:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
@@ -676,6 +701,39 @@ body {
         
         &:hover img {
             transform: scale(1.05);
+        }
+    }
+    
+    .equipo-info {
+        margin-top: 25px;
+        
+        .equipo-nombre {
+            font-family: $font-titles;
+            font-size: 1.4rem;
+            color: $titulos-color;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .equipo-puesto {
+            font-family: $font-body;
+            font-size: 1rem;
+            color: $color_botones;
+            font-weight: 500;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .equipo-frase {
+            font-family: $font-body;
+            font-size: 0.9rem;
+            color: $textos-color;
+            line-height: 1.6;
+            font-style: italic;
+            margin: 0;
+            padding: 0 15px;
+            opacity: 0.9;
         }
     }
 }
