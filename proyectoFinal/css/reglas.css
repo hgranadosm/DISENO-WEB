@@ -1048,3 +1048,15 @@
         font-size: 1rem !important;
     }
 }
+
+@media (max-width: 991px) {
+    .custom-navbar .navbar-collapse {
+        background: rgba(0, 0, 0, 0.4) rgb(242, 232, 220, 0.4);
+        margin-top: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 20px 15px;
+        border-radius: 0 0 15px 15px;
+        backdrop-filter: blur(10px);
+    }
+}
