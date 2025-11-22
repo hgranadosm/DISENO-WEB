@@ -1123,3 +1123,62 @@
         padding: 5px 10px;
     }
 }
+
+
+@media (max-width: 767px) {
+    .seccion-promociones .promo-card .promo-badge {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .seccion-promociones .promo-card .promo-descuento {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .seccion-promociones .promo-card .promo-badge {
+        font-size: 1rem;
+        padding: 5px 10px;
+        top: 12px;
+        right: 12px;
+    }
+    
+    .seccion-promociones .promo-card .promo-descuento {
+        font-size: 1rem;
+        padding: 5px 10px;
+        top: 30px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 374px) {
+    .seccion-promociones .promo-card .promo-badge {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .seccion-promociones .promo-card .promo-descuento {
+        font-size: 1rem;
+        padding: 4px 8px;
+        top: 30px;
+        right: 15px;
+    }
+}
+
+
+@media (min-width: 767px) and (max-width: 1399px) {
+    .seccion-promociones .promo-card .promo-descuento {
+        font-size: 1rem;
+        padding: 4px 8px;
+        top: 15px;
+        right: 15px;
+    }
+}
