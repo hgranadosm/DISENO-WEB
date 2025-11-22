@@ -1134,11 +1134,11 @@ section {
 
 
 .nav-item.dropdown .nav-link::after {
-    bottom: 8px; 
+    display: none;
 }
 
 .nav-item.dropdown .nav-link:hover::after {
-    width: 60%; 
+    display: none;
 }
 
 /*dropdown en desktop */
