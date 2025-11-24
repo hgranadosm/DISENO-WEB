@@ -799,6 +799,106 @@ body {
   font-weight: 700;
 }
 
+.seccion-precios-cards {
+  background: #f2e8dc;
+}
+.seccion-precios-cards .titulo-seccion {
+  font-family: "Pangaia", serif;
+  font-size: 3rem;
+  color: #d5b8a6;
+  margin-bottom: 20px;
+}
+.seccion-precios-cards .subtitulo-seccion {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #605e5b;
+  margin-bottom: 40px;
+}
+.seccion-precios-cards .card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+.seccion-precios-cards .price-table-spa {
+  padding: 40px 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  min-height: 480px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.seccion-precios-cards .price-table-spa .price-title {
+  font-family: "Pangaia", serif;
+  font-size: 1.5rem;
+  color: #d5b8a6;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.seccion-precios-cards .price-table-spa .price-icon {
+  color: #d5b8a6;
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+.seccion-precios-cards .price-table-spa .price-label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #605e5b;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.seccion-precios-cards .price-table-spa .price-number {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #d5b8a6;
+  margin: 20px 0;
+  font-family: "Pangaia", serif;
+}
+.seccion-precios-cards .price-table-spa .price-features {
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.seccion-precios-cards .price-table-spa .price-features p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+  color: #605e5b;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.seccion-precios-cards .price-table-spa .price-features p i {
+  color: #d5b8a6;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+.seccion-precios-cards .price-table-spa:hover {
+  background: linear-gradient(135deg, #d5b8a6 0%, rgb(196.6488549618, 156.358778626, 131.3511450382) 100%);
+  border-color: #d5b8a6;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(213, 184, 166, 0.4);
+}
+.seccion-precios-cards .price-table-spa:hover * {
+  color: #fff;
+}
+.seccion-precios-cards .price-table-spa:hover .price-icon {
+  color: #fff;
+  transform: scale(1.1);
+}
+.seccion-precios-cards .price-table-spa:hover .price-features p i {
+  color: #fff;
+}
+
 .footer-section {
   background: #f2e8dc;
 }
