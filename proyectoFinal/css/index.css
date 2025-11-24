@@ -814,12 +814,6 @@ body {
   color: #605e5b;
   margin-bottom: 40px;
 }
-.seccion-precios-cards .card-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  height: 100%;
-}
 .seccion-precios-cards .price-table-spa {
   padding: 40px 30px;
   text-align: center;
@@ -827,7 +821,7 @@ body {
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
   height: 100%;
-  min-height: 480px;
+  min-height: 520px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
@@ -845,28 +839,18 @@ body {
   font-size: 3rem;
   transition: all 0.3s ease;
 }
-.seccion-precios-cards .price-table-spa .price-label {
+.seccion-precios-cards .price-table-spa .price-descripcion-paquete {
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #605e5b;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.seccion-precios-cards .price-table-spa .price-number {
-  font-size: 4rem;
-  font-weight: 300;
-  color: #d5b8a6;
-  margin: 20px 0;
-  font-family: "Pangaia", serif;
+  font-style: italic;
+  margin: 15px 0 20px 0;
+  padding: 0 10px;
 }
 .seccion-precios-cards .price-table-spa .price-features {
-  text-align: left;
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: left;
+  margin-bottom: 20px;
 }
 .seccion-precios-cards .price-table-spa .price-features p {
   font-family: "Open Sans", sans-serif;
@@ -882,6 +866,55 @@ body {
   font-size: 0.9rem;
   flex-shrink: 0;
 }
+.seccion-precios-cards .price-table-spa .price-info {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 2px solid rgba(213, 184, 166, 0.15);
+}
+.seccion-precios-cards .price-table-spa .price-info .price-duracion {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #605e5b;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.seccion-precios-cards .price-table-spa .price-info .price-duracion i {
+  color: #d5b8a6;
+}
+.seccion-precios-cards .price-table-spa .price-info .price-total {
+  font-family: "Pangaia", serif;
+  font-size: 2rem;
+  color: #d5b8a6;
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+}
+.seccion-precios-cards .price-table-spa .btn-promo-reservar {
+  display: block;
+  width: 100%;
+  padding: 14px 25px;
+  background: transparent;
+  border: 2px solid #d5b8a6;
+  border-radius: 50px;
+  color: #d5b8a6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+.seccion-precios-cards .price-table-spa .btn-promo-reservar:hover {
+  background: #d5b8a6;
+  color: #fff;
+  transform: translateY(-2px);
+}
+.seccion-precios-cards .price-table-spa .btn-promo-reservar i {
+  font-size: 1rem;
+}
 .seccion-precios-cards .price-table-spa:hover {
   background: linear-gradient(135deg, #d5b8a6 0%, rgb(196.6488549618, 156.358778626, 131.3511450382) 100%);
   border-color: #d5b8a6;
@@ -889,7 +922,7 @@ body {
   box-shadow: 0 15px 40px rgba(213, 184, 166, 0.4);
 }
 .seccion-precios-cards .price-table-spa:hover * {
-  color: #fff;
+  color: #fff !important;
 }
 .seccion-precios-cards .price-table-spa:hover .price-icon {
   color: #fff;
@@ -897,6 +930,14 @@ body {
 }
 .seccion-precios-cards .price-table-spa:hover .price-features p i {
   color: #fff;
+}
+.seccion-precios-cards .price-table-spa:hover .price-duracion i {
+  color: #fff;
+}
+.seccion-precios-cards .price-table-spa:hover .btn-promo-reservar {
+  background: #fff;
+  color: #d5b8a6 !important;
+  border-color: #fff;
 }
 
 .footer-section {

@@ -948,14 +948,6 @@ body {
         color: $textos-color;
         margin-bottom: 40px;
     }
-
-    .card-link {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-        height: 100%;
-        
-    }
     
     .price-table-spa {
         padding: 40px 30px;
@@ -964,7 +956,7 @@ body {
         border-radius: 20px;
         transition: all 0.3s ease-in-out;
         height: 100%;
-        min-height: 480px;
+        min-height: 520px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
         display: flex;
         flex-direction: column;
@@ -984,30 +976,19 @@ body {
             transition: all 0.3s ease;
         }
         
-        .price-label {
+        .price-descripcion-paquete {
             font-family: $font-body;
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: $textos-color;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .price-number {
-            font-size: 4rem;
-            font-weight: 300;
-            color: $titulos-color;
-            margin: 20px 0;
-            font-family: $font-titles;
+            font-style: italic;
+            margin: 15px 0 20px 0;
+            padding: 0 10px;
         }
         
         .price-features {
-            text-align: left;
             flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            text-align: left;
+            margin-bottom: 20px;
             
             p {
                 font-family: $font-body;
@@ -1026,6 +1007,62 @@ body {
             }
         }
         
+        .price-info {
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 2px solid rgba($color_botones, 0.15);
+            
+            .price-duracion {
+                font-family: $font-body;
+                font-size: 0.9rem;
+                color: $textos-color;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                
+                i {
+                    color: $color_botones;
+                }
+            }
+            
+            .price-total {
+                font-family: $font-titles;
+                font-size: 2rem;
+                color: $color_botones;
+                font-weight: 700;
+                margin: 10px 0 15px 0;
+            }
+        }
+        
+        .btn-promo-reservar {
+            display: block;
+            width: 100%;
+            padding: 14px 25px;
+            background: transparent;
+            border: 2px solid $color_botones;
+            border-radius: 50px;
+            color: $color_botones;
+            font-family: $font-body;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            
+            &:hover {
+                background: $color_botones;
+                color: $textoblanco;
+                transform: translateY(-2px);
+            }
+            
+            i {
+                font-size: 1rem;
+            }
+        }
+        
         &:hover {
             background: linear-gradient(135deg, $color_botones 0%, darken($color_botones, 10%) 100%);
             border-color: $color_botones;
@@ -1033,7 +1070,7 @@ body {
             box-shadow: 0 15px 40px rgba($color_botones, 0.4);
             
             * {
-                color: $textoblanco;
+                color: $textoblanco !important;
             }
             
             .price-icon {
@@ -1043,6 +1080,16 @@ body {
             
             .price-features p i {
                 color: $textoblanco;
+            }
+            
+            .price-duracion i {
+                color: $textoblanco;
+            }
+            
+            .btn-promo-reservar {
+                background: $textoblanco;
+                color: $color_botones !important;
+                border-color: $textoblanco;
             }
         }
     }
