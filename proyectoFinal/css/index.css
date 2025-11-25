@@ -651,6 +651,20 @@ body {
 .seccion-cards-servicios {
   background: #f2e8dc;
 }
+.seccion-cards-servicios .titulo-seccion {
+  font-family: "Pangaia", serif;
+  font-size: 3rem;
+  color: #d5b8a6;
+  margin-bottom: 20px;
+}
+.seccion-cards-servicios .subtitulo-seccion {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #605e5b;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
 .seccion-cards-servicios .servicio-card {
   background: #fff;
   border-radius: 20px;
@@ -658,10 +672,34 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   height: 100%;
+  position: relative;
 }
 .seccion-cards-servicios .servicio-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+.seccion-cards-servicios .servicio-card:hover .paso-numero {
+  background: rgb(196.6488549618, 156.358778626, 131.3511450382);
+  transform: scale(1.1) rotate(5deg);
+}
+.seccion-cards-servicios .servicio-card .paso-numero {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #d5b8a6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pangaia", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(213, 184, 166, 0.4);
+  transition: all 0.3s ease;
 }
 .seccion-cards-servicios .servicio-card .servicio-imagen {
   position: relative;
@@ -723,14 +761,16 @@ body {
   color: #605e5b;
   font-weight: 500;
 }
-.seccion-cards-servicios .servicio-card .servicio-lista li .servicio-duracion {
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.85rem;
+.seccion-cards-servicios .servicio-card .servicio-lista li .servicio-icono {
   color: #d5b8a6;
-  background: rgba(213, 184, 166, 0.1);
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+.seccion-cards-servicios .servicio-card .servicio-lista li .servicio-icono i {
+  transition: transform 0.3s ease;
+}
+.seccion-cards-servicios .servicio-card .servicio-lista li:hover .servicio-icono i {
+  transform: scale(1.2) rotate(10deg);
 }
 
 .seccion-precios {

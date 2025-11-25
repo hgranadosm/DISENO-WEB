@@ -760,6 +760,22 @@ body {
 .seccion-cards-servicios {
     background: $color-background-principal;
     
+    .titulo-seccion {
+        font-family: $font-titles;
+        font-size: $titulo1;
+        color: $titulos-color;
+        margin-bottom: 20px;
+    }
+    
+    .subtitulo-seccion {
+        font-family: $font-body;
+        font-size: $parrafos;
+        color: $textos-color;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
+    
     .servicio-card {
         background: $textoblanco;
         border-radius: 20px;
@@ -767,10 +783,36 @@ body {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         transition: all 0.3s ease;
         height: 100%;
+        position: relative;
         
         &:hover {
             transform: translateY(-8px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+            
+            .paso-numero {
+                background: darken($color_botones, 10%);
+                transform: scale(1.1) rotate(5deg);
+            }
+        }
+        
+        .paso-numero {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: $color_botones;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $font-titles;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $textoblanco;
+            z-index: 10;
+            box-shadow: 0 5px 15px rgba($color_botones, 0.4);
+            transition: all 0.3s ease;
         }
         
         .servicio-imagen {
@@ -841,14 +883,18 @@ body {
                     font-weight: 500;
                 }
                 
-                .servicio-duracion {
-                    font-family: $font-body;
-                    font-size: 0.85rem;
+                .servicio-icono {
                     color: $color_botones;
-                    background: rgba($color_botones, 0.1);
-                    padding: 4px 12px;
-                    border-radius: 20px;
-                    font-weight: 600;
+                    font-size: 1.1rem;
+                    transition: all 0.3s ease;
+                    
+                    i {
+                        transition: transform 0.3s ease;
+                    }
+                }
+                
+                &:hover .servicio-icono i {
+                    transform: scale(1.2) rotate(10deg);
                 }
             }
         }
