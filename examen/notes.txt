@@ -1,0 +1,7 @@
+Examen: Onepage
+
+Link: https://github.com/hgranadosm/DISENO-WEB/tree/main/examen
+
+https://github.com/hgranadosm/DISENO-WEB
+
+Nota: Adjunté en Moodle un video junto con este archivo .txt donde muestro cómo se visualiza el onepage en modo responsive en un Samsung Galaxy S8. Hago esto porque, en mi computadora, dependiendo del navegador, a veces la vista responsive no se muestra correctamente. Por ello incluyo la prueba, en caso de que a usted, profesor, le ocurra el mismo inconveniente.
